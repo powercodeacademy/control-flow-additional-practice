@@ -1,0 +1,23 @@
+{
+  "name": "control-flow-additional-practice",
+  "version": "0.1.0",
+  "description": "Additional practice for control flow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -b --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:powercodeacademy/control-flow-additional-practice.git"
+  },
+  "homepage": "https://github.com/powercodeacademy/control-flow-additional-practice",
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.7.0",
+    "chai": "4.1.2",
+    "jsdom": "9.2.1",
+    "mocha": "5.2.0",
+    "mocha-jsdom": "~1.1.0",
+    "mocha-multi": "1.0.1"
+  }
+}
