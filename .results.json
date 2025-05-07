@@ -1,29 +1,158 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 0,
-    "passes": 0,
+    "suites": 4,
+    "tests": 10,
+    "passes": 10,
     "pending": 0,
-    "failures": 1,
-    "start": "2025-05-06T14:59:47.529Z",
-    "end": "2025-05-06T14:59:47.781Z",
-    "duration": 252
+    "failures": 0,
+    "start": "2025-05-07T20:19:34.613Z",
+    "end": "2025-05-07T20:19:34.726Z",
+    "duration": 113
   },
-  "tests": [],
-  "pending": [],
-  "failures": [
+  "tests": [
     {
       "title": "returns \"No fine!\" when daysLate is 0 or negative",
       "fullTitle": "index.js lateFee() returns \"No fine!\" when daysLate is 0 or negative",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 'No fine!'",
-        "showDiff": true,
-        "expected": "No fine!",
-        "stack": "AssertionError: expected undefined to equal 'No fine!'\n    at Context.<anonymous> (test/indexTest.js:7:29)\n    at process.processImmediate (node:internal/timers:478:21)"
-      }
+      "err": {}
+    },
+    {
+      "title": "charges $1 per day for up to 7 days late",
+      "fullTitle": "index.js lateFee() charges $1 per day for up to 7 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges $2 per day for 8–30 days late",
+      "fullTitle": "index.js lateFee() charges $2 per day for 8–30 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "suspends membership after more than 30 days late",
+      "fullTitle": "index.js lateFee() suspends membership after more than 30 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns extended hours for Central branch",
+      "fullTitle": "index.js branchHours() returns extended hours for Central branch",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns regular hours for any other branch",
+      "fullTitle": "index.js branchHours() returns regular hours for any other branch",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "recommends bestsellers for fiction",
+      "fullTitle": "index.js recommendBookByGenre() recommends bestsellers for fiction",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "recommends biographies for non-fiction",
+      "fullTitle": "index.js recommendBookByGenre() recommends biographies for non-fiction",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "recommends graphic novels for comics",
+      "fullTitle": "index.js recommendBookByGenre() recommends graphic novels for comics",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "gives a generic suggestion for any other genre",
+      "fullTitle": "index.js recommendBookByGenre() gives a generic suggestion for any other genre",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
     }
   ],
-  "passes": []
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "returns \"No fine!\" when daysLate is 0 or negative",
+      "fullTitle": "index.js lateFee() returns \"No fine!\" when daysLate is 0 or negative",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges $1 per day for up to 7 days late",
+      "fullTitle": "index.js lateFee() charges $1 per day for up to 7 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges $2 per day for 8–30 days late",
+      "fullTitle": "index.js lateFee() charges $2 per day for 8–30 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "suspends membership after more than 30 days late",
+      "fullTitle": "index.js lateFee() suspends membership after more than 30 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns extended hours for Central branch",
+      "fullTitle": "index.js branchHours() returns extended hours for Central branch",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns regular hours for any other branch",
+      "fullTitle": "index.js branchHours() returns regular hours for any other branch",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "recommends bestsellers for fiction",
+      "fullTitle": "index.js recommendBookByGenre() recommends bestsellers for fiction",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "recommends biographies for non-fiction",
+      "fullTitle": "index.js recommendBookByGenre() recommends biographies for non-fiction",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "recommends graphic novels for comics",
+      "fullTitle": "index.js recommendBookByGenre() recommends graphic novels for comics",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "gives a generic suggestion for any other genre",
+      "fullTitle": "index.js recommendBookByGenre() gives a generic suggestion for any other genre",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }
