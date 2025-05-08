@@ -14,8 +14,9 @@ function lateFee(daysLate) {
   }
 }
 
-function branchHours() {
-  // Write your code here!
+function branchHours(branch) {
+  let openLate;
+  return branch === "Central" ? openLate : !openLate
 }
 
 function recommendBookByGenre() {
