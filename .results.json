@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2025-05-06T14:59:47.529Z",
-    "end": "2025-05-06T14:59:47.781Z",
-    "duration": 252
+    "start": "2025-05-08T13:01:36.617Z",
+    "end": "2025-05-08T13:01:36.731Z",
+    "duration": 114
   },
   "tests": [],
   "pending": [],
@@ -15,7 +15,7 @@
     {
       "title": "returns \"No fine!\" when daysLate is 0 or negative",
       "fullTitle": "index.js lateFee() returns \"No fine!\" when daysLate is 0 or negative",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 'No fine!'",
