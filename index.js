@@ -19,6 +19,26 @@ function branchHours(branch) {
   return branch === "Central" ? openLate : !openLate
 }
 
-function recommendBookByGenre() {
-  // Write your code here!
+function recommendBookByGenre(genre) {
+  let recommendation;
+  switch (genre) {
+    case "fiction":
+      recommendation = "Crime and Punishment";
+      break;
+    case "non-fiction":
+      recommendation = "Braiding Sweetgrass";
+      break;
+    case "mystery":
+      recommendation = "The God of the Woods";
+      break;
+    case "fantasy":
+      recommendation = "Jade City";
+      break;
+    case "science fiction":
+      recommendation = "All Systems Red";
+      break;
+    case "horror":
+      recommendation = "The Shining";
+      break;
+  }
 }
