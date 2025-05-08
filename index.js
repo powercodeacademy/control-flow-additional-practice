@@ -1,44 +1,32 @@
 function lateFee(daysLate) {
   let charge = 0;
   if (daysLate <= 0) {
-    return "No charge!"
+    return "No fine!"
   } else if (daysLate <=7) {
     charge = daysLate;
-    return `You owe $${charge}.00.`;
+    return `Your fine is $${charge}.`;
   } else if (daysLate > 7 && daysLate <= 30) {
-    charge = daysLate * 2 - 7;
-    return `You owe $${charge}.00.`;
+    charge = daysLate * 2;
+    return `Your fine is $${charge}.`;
   } else {
     charge = 60;
-    return `You owe $${charge} and your borrowing privileges have been suspended.`
+    return `Membership suspended.`
   }
 }
 
 function branchHours(branch) {
-  let openLate;
-  return branch === "Central" ? openLate : !openLate
+  return branch === "Central" ? "Open until 9pm." : "Open until 6pm."
 }
 
 function recommendBookByGenre(genre) {
-  let recommendation;
   switch (genre) {
     case "fiction":
-      recommendation = "Crime and Punishment";
-      break;
+      return "Check out our bestsellers section."
     case "non-fiction":
-      recommendation = "Braiding Sweetgrass";
-      break;
-    case "mystery":
-      recommendation = "The God of the Woods";
-      break;
-    case "fantasy":
-      recommendation = "Jade City";
-      break;
-    case "science fiction":
-      recommendation = "All Systems Red";
-      break;
-    case "horror":
-      recommendation = "The Shining";
-      break;
+      return "Explore the top biographies shelf."
+    case "comics":
+      return "Visit the graphic novels area."
+    default:
+      return "Browse whatever catches your eye!"
   }
 }
